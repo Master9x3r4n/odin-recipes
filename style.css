@@ -2,34 +2,44 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    /* border: 1px solid red;    */
+    color: white; 
+}
+
+body {
+    color: white;
+    background-color: #1d293d;
+}
+
+div {
     padding: 8px;
-    /* border: 1px solid red; */
-    color: black;
 }
 
 div#title a {
     text-decoration: none;
-    color: black;
+}
+
+div#title a:hover {
+    text-decoration: underline;
 }
 
 #title {
-    background-color:aquamarine;
-    text-align: center;
+    background-color:cadetblue;
+    text-align: left;
     font-size: 48px;
     padding: 12px;
-    border: 4px solid black;
+    padding-left: 5%;
+    border-bottom: 8px solid rgb(42, 43, 44);
 }
 
 #recipes-header {
     text-align: center;
-    font-size: 24px;
-    border: 4px solid black;
-    margin: 16px;
+    font-size: 32px;
+    margin: 16px 8px 8px 8px;
     padding: 12px;
 }
 
 div.recipes {
-    background-color:cadetblue;
     text-align: center;
     margin: 0px;
     overflow: auto;
@@ -37,10 +47,11 @@ div.recipes {
 }
 
 div.recipe-card {
-    background-color:yellow;
+    background-color:rgb(133, 148, 145);
     display: inline-block;
     vertical-align: top;
     border-radius: 8px;
+    border: 4px solid rgb(42, 43, 44);
     width: 45%;
     margin: 0px 12px;
 }
@@ -48,7 +59,7 @@ div.recipe-card {
 div.recipe-title {
     text-align: center;
     font-weight: bold;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(42, 43, 44);
 }
 
 div.recipe-title a {
@@ -61,4 +72,41 @@ div.recipe-title a:hover {
 
 div.recipe-desc {
     text-align:justify;
+}
+
+#recipe-header, #image-container {
+    margin: 8px;
+    text-align: center;
+}
+
+#recipe-image {
+    height: 40%;
+    width: 40%;
+    border: 6px solid rgb(42, 43, 44);
+}
+
+body div#content {
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+#recipe-full-description, #recipe-ingredients, #recipe-steps {
+    width: 85%;
+    display:inline-block;
+    text-align: left;
+    padding: 8px;
+}
+
+h2 {
+    text-decoration: underline;
+    padding-bottom: 8px;
+}
+
+.tagline {
+    font-style: italic;
+}
+
+#recipe-ingredients ul, #recipe-steps ol {
+    margin-left: 16px;
 }
