@@ -3,13 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Home Page | Odin Recipes</title>
+        <link rel = "stylesheet" href = "style.css">
     </head>
+
     <body>
-        <h1>Odin Recipes</h1>
-        <p>Available Recipes: </p>
-        <ul>
-            <li><a href ="pages/swedish-meatballs.html">Swedish Meatballs</a></li>
-            <li><a href = "pages/cheese-steak-soup.html">Philly Cheese Steak Soup</a></li>
-        </ul>
+        <!-- Page Header -->
+        <div id = "title"><a href="../index.html">Odin Recipes</a></div>
+
+        <!-- Recipes List -->
+        <div id = "recipes-header">Available Recipes</div>
+        <div class = "recipes">
+            <div class = "recipe-card">
+                <div class = "recipe-title"><a href ="pages/swedish-meatballs.html">Swedish Meatballs</a></div>
+                <div class = "recipe-desc">These Swedish meatballs are a Christmas tradition for many families.
+                The recipe is frequently doubled and kept warm in a slow cooker.
+                Worth the effort, and the meatballs are even better the next day! 
+                Reserve brown gravy and add sour cream to it the day you serve the leftovers.</div>
+            </div>
+            <div class = "recipe-card">
+                <div class = "recipe-title"><a href = "pages/cheese-steak-soup.html">Philly Cheese Steak Soup</a></div>
+                <div class = "recipe-desc">A creamy, cheesy soup that tastes just like a Philly cheese steak sandwich! 
+            This rich and comforting soup tastes great on a cold winter's night. 
+            Serve with a crusty loaf of French bread.</div>
+            </div>
+        </div>
     </body>
+
 </html>
